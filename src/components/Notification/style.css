@@ -1,0 +1,32 @@
+.Notification {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    box-shadow: var(--neutral-dark);
+    transition: ease-in 1s;
+    display: flex;
+    margin: 1rem;
+    border-radius: 10px;
+    border: 0;
+    padding: 2rem;
+    background-color: var(--warning-bright);
+    width: 30%;
+    justify-content: space-between;
+}
+
+.icon:hover {
+    transition: ease-in 0.25s;
+    color: var(--neutral-dark);
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.show {
+    transition: ease-in 1s;
+    visibility: visible;
+}
+
+.hide {
+    transition: ease-out 1s;
+    visibility: hidden;
+}

@@ -1,0 +1,34 @@
+.Collapsible {
+  overflow: hidden;
+  border: 1px solid var(--neutral-default);
+  line-height: 2em;
+  display: block;
+}
+
+.content {
+  height: 100%;
+}
+
+.expand {
+  max-height: 100%;
+  padding: 0.25em;
+}
+
+.collapse {
+  max-height: 0;
+  visibility: collapse;
+}
+
+.title {
+  font-size: 1.75rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary-default);
+}
+
+.title:hover, .title:active {
+  cursor: pointer;
+  transition: ease-in 0.1s;
+  background-color: var(--secondary-dark);
+}
