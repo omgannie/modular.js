@@ -1,7 +1,7 @@
 .Notification {
     z-index: 99;
     position: fixed;
-    top: 0;
+    top: 10%;
     box-shadow: 0 8px 6px -6px black;
     transition: ease-in 1s;
     display: flex;
@@ -12,7 +12,6 @@
     background-color: var(--warning-bright);
     width: 30%;
     justify-content: space-between;
-    height: 100px;
 }
 
 .icon:hover {
@@ -23,11 +22,47 @@
 }
 
 .show {
-    animation-name: var(--animate-slideDown);
-    animation-duration: 3s;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    visibility: visible;
 }
 
 .hide {
-    animation-name: var(--animate-slideUp);
-    animation-duration: 3s;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    visibility: hidden;
+}
+
+@keyframes slideDown {
+    0% {
+        top: -20%;
+        visibility: hidden;
+    }
+
+    75% {
+        top: 11.5%;
+        visibility: visible;
+    }
+
+    100% {
+        top: 10%;
+        visibility: visible;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        top: 10%;
+        visibility: visible;
+    }
+
+    25% {
+        top: 11.5%;
+        visibility: visible;
+    }
+
+    100% {
+        top: -20%;
+        visibility: hidden;
+    }
 }

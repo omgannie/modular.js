@@ -13,13 +13,13 @@
   max-height: 100%;
   padding: 0.25em;
   animation-name: var(--animate-slideDown);
-  animation-duration: 1s;
+  animation-duration: 3s;
 }
 
 .collapse {
   max-height: 0;
   animation-name: var(--animate-slideUp);
-  animation-duration: 1s;
+  animation-duration: 3s;
 }
 
 .title {
