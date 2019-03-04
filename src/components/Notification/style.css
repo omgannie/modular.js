@@ -2,7 +2,7 @@
     z-index: 99;
     position: fixed;
     top: 0;
-    box-shadow: var(--neutral-dark);
+    box-shadow: 0 8px 6px -6px black;
     transition: ease-in 1s;
     display: flex;
     margin: 1rem;
@@ -12,6 +12,7 @@
     background-color: var(--warning-bright);
     width: 30%;
     justify-content: space-between;
+    height: 100px;
 }
 
 .icon:hover {
@@ -22,11 +23,11 @@
 }
 
 .show {
-    transition: ease-in 1s;
-    visibility: visible;
+    animation-name: var(--animate-slideDown);
+    animation-duration: 3s;
 }
 
 .hide {
-    transition: ease-out 1s;
-    visibility: hidden;
+    animation-name: var(--animate-slideUp);
+    animation-duration: 3s;
 }

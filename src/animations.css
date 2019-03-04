@@ -1,0 +1,23 @@
+@keyframes slideDown {
+    0% {
+        height: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        height: inherit;
+        visibility: visible;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        height: inherit;
+        visibility: visible;
+    }
+
+    100% {
+        height: 0;
+        visibility: hidden;
+    }
+}

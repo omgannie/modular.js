@@ -1,3 +1,5 @@
+@import "animations.css";
+
 :root {
   --primary-light: #FFCAB1;
   --primary-bright: #FBACBE;
@@ -23,6 +25,9 @@
   --error-bright: #FF4B3E;
   --error-default: #C20114;
   --error-dark: #972D07;
+
+  --animate-slideDown: slideDown;
+  --animate-slideUp: slideUp;
 }
 
 body {
