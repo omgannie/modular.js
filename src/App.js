@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import { Switch, Notification } from "./components";
-import { Collapsible, StepForm, SearchableDropdown } from "./modules";
+import {
+    Switch,
+    Notification,
+    Tip
+} from "./components";
+import { Collapsible, StepForm, SearchableDropdown, ParallaxBlur } from "./modules";
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,6 +22,11 @@ class App extends Component {
                 <Notification message={"Hi!"} show={this.state.showNotification} onClose={() => this.setState({ showNotification: false })} />
                 <Switch label={"Toggle me"} onActive={() => alert("I'm toggled!")}/>
             </Collapsible>
+
+            <ParallaxBlur />
+            <Tip onClick={() => {}}>
+                here's a tip
+            </Tip>
         </header>
       </div>
     );

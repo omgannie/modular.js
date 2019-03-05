@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import shortid from "shortid";
 
-class CustomTextEditForm extends React.Component {
+class CustomFormatTextbox extends React.Component {
   static propTypes = {
     onSave: PropTypes.func.isRequired,
     onPublish: PropTypes.func.isRequired,
@@ -13,9 +13,9 @@ class CustomTextEditForm extends React.Component {
   renderCustomEditButtons = () => {
      return (
        <div className={"ButtonGroup"}>
-           <select className={"fonts"}>
-               <option onClick={}>Arial</option>
-           </select>
+           <div className={"fontStyle"}></div>
+           <div className={"paragraphStyle"}></div>
+           <div className={"typeStyle"}></div>
        </div>
      )
   }
@@ -31,3 +31,5 @@ class CustomTextEditForm extends React.Component {
    );
   }
 }
+
+export default CustomFormatTextbox;

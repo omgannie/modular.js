@@ -1,23 +1,19 @@
-@keyframes slideDown {
+@keyframes fadeIn {
     0% {
-        top: -20%;
-        visibility: hidden;
+        opacity: 0;
     }
 
     100% {
-        top: 10%;
-        visibility: visible;
+        opacity: 1;
     }
 }
 
-@keyframes slideUp {
+@keyframes fadeOut {
     0% {
-        top: 10%;
-        visibility: visible;
+        opacity: 1;
     }
 
     100% {
-       top: -20%;
-       visibility: hidden;
+       opacity: 0;
     }
 }
