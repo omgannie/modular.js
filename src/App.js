@@ -2,9 +2,16 @@ import React, { Component } from 'react';
 import {
     Switch,
     Notification,
-    Tip
+    Tip,
 } from "./components";
-import { Collapsible, StepForm, SearchableDropdown, ParallaxBlur } from "./modules";
+import {
+    Collapsible,
+    StepForm,
+    SearchableDropdown,
+    ParallaxBlur,
+    Draggable,
+    DropArea
+} from "./modules";
 import logo from './logo.svg';
 import './App.css';
 
@@ -23,7 +30,12 @@ class App extends Component {
                 <Switch label={"Toggle me"} onActive={() => alert("I'm toggled!")}/>
             </Collapsible>
 
-            <ParallaxBlur />
+            <Draggable>
+                <div>
+                    Hiiiii I'm Draggable
+                </div>
+            </Draggable>
+            <DropArea><div>Hi I'm the Drop area</div></DropArea>
             <Tip onClick={() => {}}>
                 here's a tip
             </Tip>

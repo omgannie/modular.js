@@ -21,8 +21,24 @@ class FeatureFlagsPanel extends React.Component {
     this.props.onFetch();
   };
 
+  renderFlag = flagProps => {
+    return (
+        <Switch
+            label={flagProps.label}
+            onActive={() => this.props.onToggle(flagProps)}
+        />
+    );
+  };
+
   render() {
-    return (<div>Feature Flags</div>);
+    return (
+      <div>
+        <h1>Feature Flags</h1>
+        <div id={"ff-main"}>
+
+        </div>
+      </div>
+    );
   };
 }
 
@@ -37,7 +53,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
 const mapStateToProps = (state) => {
   return {
-
+      ...state
   }
 };
 

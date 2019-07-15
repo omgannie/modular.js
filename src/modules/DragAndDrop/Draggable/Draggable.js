@@ -6,9 +6,23 @@ class Draggable extends React.Component {
      children: PropTypes.node.isRequired
    };
 
+   handleDragStart() {
+      console.log("I'm dragging!");
+   }
+
+   handleDragEnd() {
+      console.log("I stopped dragging!");
+   }
+
    render() {
       return (
-         <div onDragStart={}>{this.props.children}</div>
+         <div
+             draggable={true}
+             onDragStart={this.handleDragStart}
+             onDragEnd={this.handleDragEnd}
+         >
+             {this.props.children}
+         </div>
       );
    }
 }

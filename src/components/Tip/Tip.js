@@ -24,7 +24,7 @@ class Tip extends React.Component {
         const { children, onClick } = this.props;
         if (this.state.show) {
             return (
-                <div className={"Tip"}>
+                <div className={"Tip show"}>
                     <div className={"title"}>Did you know? <HelpOutlined/></div>
                     <span>{children}</span>
                     <div className={"actions"}>
